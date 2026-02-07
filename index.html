@@ -4,42 +4,123 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tom Works Landscaping</title>
+
+  <!-- Google Font: Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
   <style>
-    body { font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; color:#333; }
-    header { background:#4CAF50; color:white; padding:2em 1em; text-align:center; }
-    header h1 { margin:0; }
-    header p { font-size:1.2em; }
-    section { padding:2em 1em; max-width:800px; margin:auto; }
-    h2 { color:#4CAF50; margin-top:0; }
-    ul { list-style-type: disc; padding-left:1.5em; }
-    .contact { text-align:center; }
-    .gallery img { width:100%; max-width:250px; margin:0.5em; border-radius:8px; }
-    footer { background:#eee; text-align:center; padding:1em; font-size:0.9em; }
-    @media (min-width:600px) { .gallery img { max-width:30%; } }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 2em 1em;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.6em; /* +30% */
+      font-weight: 700;
+    }
+
+    header p {
+      margin: 0.5em 0;
+    }
+
+    .tagline {
+      font-size: 1.56em; /* +30% */
+      font-weight: 600;
+    }
+
+    .contact-details {
+      font-size: 1.56em; /* +30% */
+      font-weight: 600;
+    }
+
+    section {
+      padding: 2em 1em;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #4CAF50;
+      margin-top: 0;
+      text-align: center;
+    }
+
+    .services {
+      text-align: center;
+    }
+
+    .services ul {
+      list-style-position: inside;
+      padding-left: 0;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1em;
+    }
+
+    .gallery img {
+      width: 250px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 1em;
+      font-size: 0.9em;
+    }
   </style>
 </head>
-<body> 
-<header>
+
+<body>
+
+  <header>
     <h1>Tom Works Landscaping</h1>
-    <p>Quick, reliable, professional.</p>
-    <p>07761 821 231 - Gestalt1000@gmail.com</p>
+    <p class="tagline">Quick, reliable, professional.</p>
+    <p class="contact-details">07761 821 231 · Gestalt1000@gmail.com</p>
   </header>
-  <section>
-    <p>Hello! I’m Tom. I specialise in small-scale landscaping and repairs for gardens around Loughborough and the surrounding area.</p>
-  </section>
 
   <section>
-    <h2>Services</h2>
-    <ul>
-      <li>Garden tidy-ups & maintenance</li>
-      <li>Repairs to decking, patios, fencing and gates</li>
-      <li>Turfing & planting</li>
-      <li>Constructing raised beds</li>
-      <li>All soft landscaping jobs</li>
-    </ul>
+    <p>
+      Hello! I’m Tom. I specialise in small-scale landscaping and repairs for gardens around
+      Loughborough and the surrounding area.
+    </p>
+
+    <div class="services">
+      <h2>Services</h2>
+      <ul>
+        <li>Garden tidy-ups & maintenance</li>
+        <li>Repairs to decking, patios, fencing and gates</li>
+        <li>Turfing & planting</li>
+        <li>Constructing raised beds</li>
+        <li>All soft landscaping jobs</li>
+      </ul>
+    </div>
   </section>
 
   <section class="gallery">
     <img src="images/patio.jpg" alt="Patio renovation">
     <img src="images/fence repair.jpg" alt="Fence repair">
     <img src="images/raised beds.jpg" alt="Making raised beds">
+  </section>
+
+</body>
+</html>
