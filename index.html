@@ -20,10 +20,11 @@
       color: #333;
     }
 
-    /* Header with subtle leaf texture */
+    /* Header with subtle leaf overlay on top of gradient */
     header {
-      background: linear-gradient(90deg, #2E7D32, #66BB6A),
-                  url('images/leaf-texture.png') repeat;
+      background: 
+        url('images/leaf-texture.png') repeat, /* leaf texture on top */
+        linear-gradient(90deg, #2E7D32, #66BB6A); /* gradient underneath */
       background-size: cover;
       color: white;
       padding: 2em 1em 2.5em 1em;
@@ -180,7 +181,7 @@
       </ul>
     </div>
 
-    <!-- CTA button moved after services -->
+    <!-- CTA button after services -->
     <div class="cta">
       <a href="mailto:Gestalt1000@gmail.com">Get in Touch</a>
     </div>
