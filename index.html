@@ -125,11 +125,35 @@
     </div>
   </section>
 
-  <section class="gallery">
-    <img src="images/patio.jpg" alt="Patio renovation">
-    <img src="images/fence repair.jpg" alt="Fence repair">
-    <img src="images/raised beds.jpg" alt="Making raised beds">
-  </section>
+<section class="gallery">
+  <img src="images/patio.jpg" alt="Patio renovation">
+  <img src="images/fence repair.jpg" alt="Fence repair">
+  <img src="images/raised beds.jpg" alt="Making raised beds">
+</section>
+
+<style>
+/* Gallery images */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+.gallery img {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth animation */
+}
+
+/* Hover effect */
+.gallery img:hover {
+  transform: scale(1.05);           /* slightly enlarge image */
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3); /* subtle shadow for depth */
+}
+</style>
 
 </body>
 </html>
