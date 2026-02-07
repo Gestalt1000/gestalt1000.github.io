@@ -19,37 +19,45 @@
       color: #333;
     }
 
+    /* Header: jazzed-up version */
     header {
-      background: #4CAF50;
+      background: linear-gradient(90deg, #2E7D32, #66BB6A); /* dark green → lighter green */
       color: white;
       padding: 2em 1em;
       text-align: center;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      border-bottom: 4px solid #FFC107; /* subtle gold highlight */
     }
 
     header h1 {
       margin: 0;
       font-size: 2.6em; /* +30% */
       font-weight: 700;
-    }
-
-    header p {
-      margin: 0.5em 0;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3); /* subtle pop */
     }
 
     .tagline {
       font-size: 1.56em; /* +30% */
       font-weight: 600;
+      margin: 0.5em 0;
     }
 
     .contact-details {
       font-size: 1.56em; /* +30% */
       font-weight: 600;
+      margin: 0.3em 0 0 0;
     }
 
     section {
       padding: 2em 1em;
       max-width: 800px;
       margin: auto;
+    }
+
+    /* Paragraph centred with forced line break */
+    .intro {
+      text-align: center;
     }
 
     h2 {
@@ -67,6 +75,7 @@
       padding-left: 0;
     }
 
+    /* Gallery: uniform images */
     .gallery {
       display: flex;
       flex-wrap: wrap;
@@ -98,11 +107,11 @@
     <p class="contact-details">07761 821 231 · Gestalt1000@gmail.com</p>
   </header>
 
-<section>
-  <p style="text-align: center;">
-    Hello! I’m Tom. I specialise in small-scale landscaping and repairs<br>
-    for gardens around Loughborough and the surrounding area.
-  </p>
+  <section>
+    <p class="intro">
+      Hello! I’m Tom. I specialise in small-scale landscaping and repairs<br>
+      for gardens around Loughborough and the surrounding area.
+    </p>
 
     <div class="services">
       <h2>Services</h2>
