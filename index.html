@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tom Works Landscaping</title>
-  <meta name="description" content="Tom Works Landscaping – Quick, reliable, professional landscaping and garden repairs in Loughborough.">
+  <meta name="description" content="Tom Works Landscaping – Reliable landscaping and garden repairs in Loughborough.">
 
   <!-- Google Font: Montserrat -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,20 +48,19 @@
 
     .logo {
       max-width: 260px;
-      margin: 0 auto 0.8em auto;
-      display: block;
+      width: 80%;
+      height: auto;
+      margin-bottom: 0.6em;
     }
 
-    .tagline {
-      font-size: 1.5em;
+    .contact-details {
+      font-size: 1.2em;
       font-weight: 600;
-      margin: 0;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.35);
     }
 
     section {
       padding: 2em 1em;
-      max-width: 1000px;
+      max-width: 800px;
       margin: auto;
     }
 
@@ -73,41 +72,12 @@
 
     h2 {
       color: #4CAF50;
-      margin-top: 0;
-    }
-
-    /* SERVICES + CONTACT LAYOUT */
-    .content-row {
-      display: flex;
-      gap: 2em;
-      align-items: flex-start;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .contact-box {
-      background: #f4f7f4;
-      border: 2px solid #4CAF50;
-      border-radius: 12px;
-      padding: 1.5em;
-      min-width: 240px;
-      max-width: 280px;
-      font-weight: 500;
-    }
-
-    .contact-box h3 {
-      margin-top: 0;
-      color: #2E7D32;
       text-align: center;
-    }
-
-    .contact-box p {
-      margin: 0.6em 0;
-      text-align: center;
+      margin-top: 0;
     }
 
     .services {
-      max-width: 500px;
+      text-align: center;
     }
 
     .services ul {
@@ -169,15 +139,10 @@
       font-size: 0.9em;
     }
 
-    @media (max-width: 700px) {
-      .content-row {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .contact-box {
-        width: 100%;
-        max-width: 360px;
+    @media (max-width: 600px) {
+      .gallery img {
+        width: 90%;
+        height: auto;
       }
     }
   </style>
@@ -186,8 +151,10 @@
 <body>
 
   <header>
-    <img src="logo.png" alt="Tom Works Landscaping logo" class="logo">
-    <p class="tagline">Quick, Reliable, Professional</p>
+    <img src="logo.png" alt="Tom Works Landscaping Logo" class="logo">
+    <div class="contact-details">
+      07761 821 231 · Gestalt1000@gmail.com
+    </div>
   </header>
 
   <section>
@@ -196,23 +163,15 @@
       for gardens around Loughborough and the surrounding area.
     </p>
 
-    <div class="content-row">
-      <div class="contact-box">
-        <h3>Contact</h3>
-        <p>📞 07761 821 231</p>
-        <p>✉️ Gestalt1000@gmail.com</p>
-      </div>
-
-      <div class="services">
-        <h2>Services</h2>
-        <ul>
-          <li>Garden tidy-ups & maintenance</li>
-          <li>Repairs to decking, patios, fencing and gates</li>
-          <li>Turfing & planting</li>
-          <li>Constructing raised beds</li>
-          <li>All soft landscaping jobs</li>
-        </ul>
-      </div>
+    <div class="services">
+      <h2>Services</h2>
+      <ul>
+        <li>Garden tidy-ups & maintenance</li>
+        <li>Repairs to decking, patios, fencing and gates</li>
+        <li>Turfing & planting</li>
+        <li>Constructing raised beds</li>
+        <li>All soft landscaping jobs</li>
+      </ul>
     </div>
 
     <div class="cta">
