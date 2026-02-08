@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tom Works Landscaping</title>
-  <meta name="description" content="Tom Works Landscaping – Quick, reliable, professional landscaping and garden repairs in Loughborough. Contact us for decking, patios, turfing and more.">
+  <meta name="description" content="Tom Works Landscaping – Quick, reliable, professional landscaping and garden repairs in Loughborough.">
 
   <!-- Google Font: Montserrat -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,14 +20,26 @@
       color: #333;
     }
 
-    /* Header with subtle leaf overlay on top of gradient */
+    /* HEADER */
     header {
-      background: 
-        url('images/leaf-texture.png') repeat, /* leaf texture on top */
-        linear-gradient(90deg, #2E7D32, #66BB6A); /* gradient underneath */
-      background-size: cover;
+      background-image:
+        url('images/leaf-texture.png'),
+        linear-gradient(90deg, #2E7D32, #66BB6A);
+
+      background-repeat:
+        repeat,
+        no-repeat;
+
+      background-position:
+        top center,
+        center;
+
+      background-size:
+        100px auto,
+        cover;
+
       color: white;
-      padding: 2em 1em 2.5em 1em;
+      padding: 2.2em 1em 2.6em 1em;
       text-align: center;
       border-bottom-left-radius: 15px;
       border-bottom-right-radius: 15px;
@@ -38,7 +50,7 @@
       margin: 0;
       font-size: 2.6em;
       font-weight: 700;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.35);
     }
 
     .tagline {
@@ -53,25 +65,22 @@
       margin: 0.3em 0 0 0;
     }
 
-    /* Sections */
     section {
       padding: 2em 1em;
       max-width: 800px;
       margin: auto;
     }
 
-    /* Intro paragraph */
     .intro {
       text-align: center;
       max-width: 600px;
       margin: 0 auto 2em auto;
     }
 
-    /* Services */
     h2 {
       color: #4CAF50;
-      margin-top: 0;
       text-align: center;
+      margin-top: 0;
     }
 
     .services {
@@ -87,14 +96,28 @@
       font-weight: 500;
       font-size: 1.1em;
       margin-bottom: 0.5em;
-      transition: color 0.3s;
     }
 
-    .services li:hover {
-      color: #2E7D32;
+    .cta {
+      text-align: center;
+      margin: 2em 0;
     }
 
-    /* Gallery */
+    .cta a {
+      background: #FFC107;
+      color: #333;
+      padding: 0.8em 1.6em;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .cta a:hover {
+      background: #FFB300;
+      transform: scale(1.05);
+    }
+
     .gallery {
       display: flex;
       flex-wrap: wrap;
@@ -116,29 +139,6 @@
       box-shadow: 0 8px 15px rgba(0,0,0,0.3);
     }
 
-    /* Call-to-Action Button */
-    .cta {
-      display: block;
-      text-align: center;
-      margin: 2em 0;
-    }
-
-    .cta a {
-      background: #FFC107;
-      color: #333;
-      padding: 0.8em 1.5em;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: background 0.3s, transform 0.2s;
-    }
-
-    .cta a:hover {
-      background: #FFB300;
-      transform: scale(1.05);
-    }
-
-    /* Footer */
     footer {
       background: #eee;
       text-align: center;
@@ -146,7 +146,6 @@
       font-size: 0.9em;
     }
 
-    /* Responsive */
     @media (max-width: 600px) {
       .gallery img {
         width: 90%;
@@ -181,7 +180,6 @@
       </ul>
     </div>
 
-    <!-- CTA button after services -->
     <div class="cta">
       <a href="mailto:Gestalt1000@gmail.com">Get in Touch</a>
     </div>
