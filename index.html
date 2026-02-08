@@ -6,7 +6,6 @@
   <title>Tom Works Landscaping</title>
   <meta name="description" content="Tom Works Landscaping – Reliable landscaping and garden repairs in Loughborough.">
 
-  <!-- Google Font: Montserrat -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -25,21 +24,12 @@
       background-image:
         url('images/leaf-texture.png'),
         linear-gradient(90deg, #2E7D32, #66BB6A);
-
-      background-repeat:
-        repeat,
-        no-repeat;
-
-      background-position:
-        top center,
-        center;
-
-      background-size:
-        350px auto,
-        cover;
+      background-repeat: repeat, no-repeat;
+      background-position: top center, center;
+      background-size: 350px auto, cover;
 
       color: white;
-      padding: 2.2em 1em 2.6em 1em;
+      padding: 1.65em 1em 1.95em 1em; /* 25% shorter */
       text-align: center;
       border-bottom-left-radius: 15px;
       border-bottom-right-radius: 15px;
@@ -47,15 +37,16 @@
     }
 
     .logo {
-      max-width: 260px;
-      width: 80%;
+      max-width: 360px; /* 50% bigger than before */
+      width: 90%;
       height: auto;
       margin-bottom: 0.6em;
     }
 
     .contact-details {
-      font-size: 1.2em;
+      font-size: 1.1em;
       font-weight: 600;
+      margin: 0;
     }
 
     section {
@@ -124,12 +115,6 @@
       height: 180px;
       object-fit: cover;
       border-radius: 8px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .gallery img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 15px rgba(0,0,0,0.3);
     }
 
     footer {
@@ -138,56 +123,49 @@
       padding: 1.5em;
       font-size: 0.9em;
     }
-
-    @media (max-width: 600px) {
-      .gallery img {
-        width: 90%;
-        height: auto;
-      }
-    }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <img src="images/logo.png" alt="Tom Works Landscaping Logo" class="logo">
-    <div class="contact-details">
-      07761 821 231 · Gestalt1000@gmail.com
-    </div>
-  </header>
+<header>
+  <img src="images/logo.png" alt="Tom Works Landscaping Logo" class="logo">
+  <p class="contact-details">
+    07761 821 231 · Gestalt1000@gmail.com
+  </p>
+</header>
 
-  <section>
-    <p class="intro">
-      Hello! I’m Tom. I specialise in small-scale landscaping and repairs<br>
-      for gardens around Loughborough and the surrounding area.
-    </p>
+<section>
+  <p class="intro">
+    Hello! I’m Tom. I specialise in small-scale landscaping and repairs<br>
+    for gardens around Loughborough and the surrounding area.
+  </p>
 
-    <div class="services">
-      <h2>Services</h2>
-      <ul>
-        <li>Garden tidy-ups & maintenance</li>
-        <li>Repairs to decking, patios, fencing and gates</li>
-        <li>Turfing & planting</li>
-        <li>Constructing raised beds</li>
-        <li>All soft landscaping jobs</li>
-      </ul>
-    </div>
+  <div class="services">
+    <h2>Services</h2>
+    <ul>
+      <li>Garden tidy-ups & maintenance</li>
+      <li>Repairs to decking, patios, fencing and gates</li>
+      <li>Turfing & planting</li>
+      <li>Constructing raised beds</li>
+      <li>All soft landscaping jobs</li>
+    </ul>
+  </div>
 
-    <div class="cta">
-      <a href="mailto:Gestalt1000@gmail.com">Get in Touch</a>
-    </div>
-  </section>
+  <div class="cta">
+    <a href="mailto:Gestalt1000@gmail.com">Get in Touch</a>
+  </div>
+</section>
 
-  <section class="gallery">
-    <img src="images/patio.jpg" alt="Patio renovation">
-    <img src="images/fence repair.jpg" alt="Fence repair">
-    <img src="images/raised beds.jpg" alt="Making raised beds">
-  </section>
+<section class="gallery">
+  <img src="images/patio.jpg" alt="Patio renovation">
+  <img src="images/fence repair.jpg" alt="Fence repair">
+  <img src="images/raised beds.jpg" alt="Making raised beds">
+</section>
 
-  <footer>
-    &copy; 2026 Tom Works Landscaping. All rights reserved.
-  </footer>
+<footer>
+  &copy; 2026 Tom Works Landscaping. All rights reserved.
+</footer>
 
 </body>
 </html>
