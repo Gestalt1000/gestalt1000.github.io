@@ -28,7 +28,7 @@
       background-position: top center, center;
       background-size: 350px auto, cover;
 
-      height: 180px;            /* ← TWEAK THIS VALUE */
+      height: 140px;            /* ← ONLY VALUE YOU TWEAK */
       padding: 0 1em;
 
       border-bottom-left-radius: 15px;
@@ -42,14 +42,17 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      overflow: hidden; /* keeps scaling tidy */
     }
 
-    /* LOGO FILLS HEADER HEIGHT */
+    /* LOGO WITH SCALE COMPENSATION */
     .logo {
       height: 100%;
       width: auto;
       max-width: 100%;
       display: block;
+      transform: scale(2);   /* ← compensates for transparent padding */
+      transform-origin: center;
     }
 
     section {
