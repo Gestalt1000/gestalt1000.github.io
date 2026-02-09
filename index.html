@@ -30,21 +30,23 @@
 
       height: 140px;            /* ← TWEAK THIS VALUE */
       padding: 0 1em;
-      display: flex;
-      align-items: center;
-      justify-content: center;
 
-      color: white;
-      text-align: center;
       border-bottom-left-radius: 15px;
       border-bottom-right-radius: 15px;
       border-bottom: 4px solid #FFC107;
     }
 
+    /* INNER HEIGHT BOX */
+    .header-inner {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
     /* LOGO FILLS HEADER HEIGHT */
     .logo {
       height: 100%;
-      max-height: 100%;
       width: auto;
       max-width: 100%;
       display: block;
@@ -137,7 +139,9 @@
 <body>
 
 <header>
-  <img src="images/logo.png" alt="Tom Works Landscaping Logo" class="logo">
+  <div class="header-inner">
+    <img src="images/logo.png" alt="Tom Works Landscaping Logo" class="logo">
+  </div>
 </header>
 
 <section>
