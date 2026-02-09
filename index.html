@@ -19,7 +19,7 @@
       color: #333;
     }
 
-    /* HEADER */
+    /* HEADER – CHANGE HEIGHT HERE ONLY */
     header {
       background-image:
         url('images/leaf-texture.png'),
@@ -28,20 +28,26 @@
       background-position: top center, center;
       background-size: 350px auto, cover;
 
+      height: 140px;            /* ← TWEAK THIS VALUE */
+      padding: 0 1em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
       color: white;
-      padding: 0.3em 1em; /* tight padding, just slightly taller than logo */
       text-align: center;
       border-bottom-left-radius: 15px;
       border-bottom-right-radius: 15px;
       border-bottom: 4px solid #FFC107;
     }
 
+    /* LOGO FILLS HEADER HEIGHT */
     .logo {
-      max-width: 360px;
-      width: 90%;
-      height: auto;
+      height: 100%;
+      max-height: 100%;
+      width: auto;
+      max-width: 100%;
       display: block;
-      margin: 0 auto;
     }
 
     section {
